@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NATALIE-->
+
+<!--scrollview for responsive layout-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+                    <!--textview for the "Main Menu" heading
+                added a drawable for aesthetics-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mainmenu"
+                        android:text="Main Menu"
+                        android:textColor="@color/black"
+                        android:textSize="36dp"
+                        android:layout_margin="50dp"
+                        android:gravity="center"
+                        android:textStyle="italic"
+                        android:drawableLeft="@drawable/baseline_menu_24"
+                        android:drawablePadding="10dp"
+                        />
+
+                    <!--added 5 buttons for each feature, onclick listener will be in main activity-->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/calendarbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Calendar"
+                        android:textSize="20dp"
+                        app:cornerRadius="10dp"
+                        app:backgroundTint="@color/black"
+                        android:layout_below="@id/mainmenu"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/productivitybtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Productivity Chart"
+                        android:textSize="20dp"
+                        app:cornerRadius="10dp"
+                        app:backgroundTint="@color/black"
+                        android:layout_below="@id/calendarbtn"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/notebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Notes"
+                        android:textSize="20dp"
+                        app:cornerRadius="10dp"
+                        app:backgroundTint="@color/black"
+                        android:layout_below="@id/productivitybtn"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/timerbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Timer"
+                        android:textSize="20dp"
+                        app:cornerRadius="10dp"
+                        app:backgroundTint="@color/black"
+                        android:layout_below="@id/notebtn"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/checklistbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Checklist"
+                        android:textSize="20dp"
+                        app:cornerRadius="10dp"
+                        app:backgroundTint="@color/black"
+                        android:layout_below="@id/timerbtn"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

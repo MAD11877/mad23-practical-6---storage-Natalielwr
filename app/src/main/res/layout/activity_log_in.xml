@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NATALIE-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LogInActivity">
+
+    <!--textview for log in header-->
+    <!--center, black, adjusted margin, sizes etc. based on what i like-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        />
+
+    <!--edit text for both username and password inputs-->
+    <!--added drawables (small icons) next to username and password for aesthetics-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginUsername"
+        android:layout_below="@id/login"
+        android:hint="Username"
+        android:textColorHint="#5D5D5D"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        />
+
+    <!--inputType = "textPassword" is to hide the text because its a password-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/loginUsername"
+        android:hint="Password"
+        android:textColorHint="#5D5D5D"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        />
+
+    <!--forgot password prompt that many other login pages have-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpassword"
+        android:layout_below="@id/password"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        />
+
+    <!--login button for users to click and log in-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotpassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:text="Log In"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        app:cornerRadius="10dp" />
+
+    <!--horizontal layout for 2 textviews (Don't have an Account? and Sign Up)-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/loginbutton">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an Account?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!--in stage 2, when people dont have an account they can click this textview
+        which will redirect them to the signup page to signup for an account-->
+        <TextView
+            android:id="@+id/txtSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Sign Up"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
