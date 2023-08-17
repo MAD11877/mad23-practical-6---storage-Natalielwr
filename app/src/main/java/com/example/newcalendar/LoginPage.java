@@ -29,9 +29,9 @@ public class LoginPage extends AppCompatActivity {
             public void onClick(View view) {
                 EditText username = findViewById(R.id.username_login);
                 EditText password = findViewById(R.id.password_login);
-                // Write a message to the database
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                //DatabaseReference dbRef = database.getReference("Users/"+username.toString());
+
+                FirebaseDatabase database = FirebaseDatabase.getInstance("https://mad-prac-51d2f-default-rtdb.asia-southeast1.firebasedatabase.app/");
+
                 DatabaseReference dbRef = database.getReference("Users").child(username.getText().toString());
                 Log.d("Database Reference", dbRef.toString());
 

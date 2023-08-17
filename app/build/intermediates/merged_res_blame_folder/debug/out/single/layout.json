@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.newcalendar.app-mergeDebugResources-42:/layout/fragment_group2.xml",
+        "source": "com.example.newcalendar.app-main-45:/layout/fragment_group2.xml"
+    },
+    {
+        "merged": "com.example.newcalendar.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.example.newcalendar.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.newcalendar.app-mergeDebugResources-42:/layout/activity_message_group.xml",
+        "source": "com.example.newcalendar.app-main-45:/layout/activity_message_group.xml"
+    },
+    {
+        "merged": "com.example.newcalendar.app-mergeDebugResources-42:/layout/activity_list.xml",
+        "source": "com.example.newcalendar.app-main-45:/layout/activity_list.xml"
+    },
+    {
+        "merged": "com.example.newcalendar.app-mergeDebugResources-42:/layout/fragment_group1.xml",
+        "source": "com.example.newcalendar.app-main-45:/layout/fragment_group1.xml"
+    },
+    {
+        "merged": "com.example.newcalendar.app-mergeDebugResources-42:/layout/view_holder.xml",
+        "source": "com.example.newcalendar.app-main-45:/layout/view_holder.xml"
+    }
+]
